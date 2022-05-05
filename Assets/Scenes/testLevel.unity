@@ -742,6 +742,7 @@ GameObject:
   - component: {fileID: 285472123}
   - component: {fileID: 285472125}
   - component: {fileID: 285472124}
+  - component: {fileID: 285472126}
   m_Layer: 0
   m_Name: Camera 2
   m_TagString: Untagged
@@ -833,6 +834,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &285472126
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 285472122}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9a3dfadc2cddc914d9d509becb2b897e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &297909988
 GameObject:
   m_ObjectHideFlags: 0
@@ -7490,6 +7511,7 @@ GameObject:
   - component: {fileID: 1163911912}
   - component: {fileID: 1163911914}
   - component: {fileID: 1163911913}
+  - component: {fileID: 1163911915}
   m_Layer: 0
   m_Name: Camera 3
   m_TagString: Untagged
@@ -7581,6 +7603,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1163911915
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1163911911}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9a3dfadc2cddc914d9d509becb2b897e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!4 &1204299830 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6410308234582836491, guid: dcda1b6295cea1e42b5eda7017f9ad72, type: 3}
@@ -7882,7 +7924,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1420301312
@@ -8100,7 +8142,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1428855788
@@ -18595,6 +18637,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2089918220}
   - component: {fileID: 2089918222}
+  - component: {fileID: 2089918223}
   - component: {fileID: 2089918221}
   m_Layer: 0
   m_Name: Camera 1
@@ -18611,7 +18654,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2089918219}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.04, y: 4.07, z: -2.9753625}
+  m_LocalPosition: {x: -3.01, y: 5.1, z: -2.9753625}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -18631,7 +18674,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationSpeed: 20
-  distance: 10
+  distance: 1
   angle: 30
   height: 1
   meshColor: {r: 1, g: 0, b: 0, a: 1}
@@ -18687,6 +18730,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &2089918223
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2089918219}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9a3dfadc2cddc914d9d509becb2b897e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2127296329
 GameObject:
   m_ObjectHideFlags: 0
@@ -26456,11 +26519,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 632895669283446235, guid: 3083b782f4221e64b8855f4247c78b9a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.11
+      value: 2.06
       objectReference: {fileID: 0}
     - target: {fileID: 632895669283446235, guid: 3083b782f4221e64b8855f4247c78b9a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8.32
+      value: 11.72
       objectReference: {fileID: 0}
     - target: {fileID: 632895669283446235, guid: 3083b782f4221e64b8855f4247c78b9a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -26472,15 +26535,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 632895669283446235, guid: 3083b782f4221e64b8855f4247c78b9a, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 632895669283446235, guid: 3083b782f4221e64b8855f4247c78b9a, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 632895669283446235, guid: 3083b782f4221e64b8855f4247c78b9a, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 632895669283446235, guid: 3083b782f4221e64b8855f4247c78b9a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -26494,6 +26557,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 632895669283446236, guid: 3083b782f4221e64b8855f4247c78b9a, type: 3}
+      propertyPath: m_Size.y
+      value: 0.89
+      objectReference: {fileID: 0}
+    - target: {fileID: 632895669283446236, guid: 3083b782f4221e64b8855f4247c78b9a, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: c2b67ef5667836d4e968d898566fa157, type: 3}
     - target: {fileID: 632895669283446237, guid: 3083b782f4221e64b8855f4247c78b9a, type: 3}
       propertyPath: m_Name
       value: lockPick
