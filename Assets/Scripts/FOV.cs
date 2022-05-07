@@ -7,15 +7,25 @@ public class FOV : MonoBehaviour
 {
 
     [SerializeField] private LayerMask layerMask;
+    [SerializeField] private Vector3 aimDirection;
+
+    private Vector3 origin;
+    private float startingAngle;
+    private float fov;
+    private void Start() 
+    {
+        fov = 90;
+    }
     private void Update()
     {
         Mesh mesh = new Mesh();
         GetComponent<MeshFilter>().mesh = mesh;
 
-        float fov = 90f;
+
         Vector3 origin = Vector3.zero;
+ 
         int rayCount = 50;
-        float angle = 0f;
+        float angle = 2f;
         float angleIncrease = fov / rayCount;
         float viewDistance = 5f;
 
@@ -61,4 +71,11 @@ public class FOV : MonoBehaviour
         mesh.uv = uv;
         mesh.triangles = triangles;
     }
+
+    public void SetOrigin(Vector3 origin)
+    {
+        this.origin = origin; 
+    }
+
+
 }

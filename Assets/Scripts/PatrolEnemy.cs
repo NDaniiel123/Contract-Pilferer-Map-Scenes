@@ -1,9 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using CodeMonkey.Utils;
+
 
 public class PatrolEnemy : MonoBehaviour
 {
+    [SerializeField] private FOV fieldOfView;
+
     public float speed;
     public Transform[] patrolPoints;
     public float waitTime;
@@ -12,9 +16,12 @@ public class PatrolEnemy : MonoBehaviour
     bool once;
 
     // Update is called once per frame
+
+
    private void Update()
     {
-       if(transform.position != patrolPoints[currentPointIndex].position)
+        fieldOfView.SetOrigin(transform.position);
+        if (transform.position != patrolPoints[currentPointIndex].position)
         {
             transform.position = Vector2.MoveTowards(transform.position, patrolPoints[currentPointIndex].position, speed * Time.deltaTime);
         } else
@@ -23,6 +30,8 @@ public class PatrolEnemy : MonoBehaviour
             once = true;
             StartCoroutine(Wait());
         }
+
+     
     }
 
     IEnumerator Wait()
