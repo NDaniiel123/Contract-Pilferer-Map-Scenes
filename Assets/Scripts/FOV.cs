@@ -13,8 +13,8 @@ public class FOV : MonoBehaviour
         int[] triangles = new int[3];
 
         vertices[0] = Vector3.zero;
-        vertices[1] = new Vector3(50, 0);
-        vertices[2] = new Vector3(0, -50);
+        vertices[1] = new Vector3(5, 0);
+        vertices[2] = new Vector3(0, -5);
 
         triangles[0] = 0;
         triangles[1] = 1;
