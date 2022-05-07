@@ -5,7 +5,9 @@ using CodeMonkey.Utils;
 
 public class FOV : MonoBehaviour
 {
-    private void Start()
+
+    [SerializeField] private LayerMask layerMask;
+    private void Update()
     {
         Mesh mesh = new Mesh();
         GetComponent<MeshFilter>().mesh = mesh;
@@ -28,7 +30,18 @@ public class FOV : MonoBehaviour
 
         for (int i = 0; i <= rayCount; i++) 
         {
-            Vector3 vertex = origin + UtilsClass.GetVectorFromAngle(angle) * viewDistance;
+            Vector3 vertex;
+            RaycastHit2D raycastHit2D = Physics2D.Raycast(origin, UtilsClass.GetVectorFromAngle(angle), viewDistance, layerMask);
+
+            if (raycastHit2D.collider == null)
+            {
+                vertex = origin + UtilsClass.GetVectorFromAngle(angle) * viewDistance;
+            }
+            else 
+            {
+                vertex = raycastHit2D.point;
+            }
+
             vertices[vertexIndex] = vertex;
 
             if (i > 0)
