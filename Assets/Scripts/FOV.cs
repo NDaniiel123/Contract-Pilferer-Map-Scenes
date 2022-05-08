@@ -12,10 +12,7 @@ public class FOV : MonoBehaviour
     private Vector3 origin;
     private float startingAngle;
     private float fov;
-    private void Start() 
-    {
-        fov = 90;
-    }
+
     private void Update()
     {
         Mesh mesh = new Mesh();
@@ -23,7 +20,7 @@ public class FOV : MonoBehaviour
 
 
         Vector3 origin = Vector3.zero;
- 
+        var fov = 90;
         int rayCount = 50;
         float angle = 2f;
         float angleIncrease = fov / rayCount;

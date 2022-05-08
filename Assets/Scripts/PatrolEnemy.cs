@@ -20,7 +20,6 @@ public class PatrolEnemy : MonoBehaviour
 
    private void Update()
     {
-        fieldOfView.SetOrigin(transform.position);
         if (transform.position != patrolPoints[currentPointIndex].position)
         {
             transform.position = Vector2.MoveTowards(transform.position, patrolPoints[currentPointIndex].position, speed * Time.deltaTime);
