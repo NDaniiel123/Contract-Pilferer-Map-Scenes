@@ -8246,7 +8246,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 782843206}
-  lerpSpeed: 1
+  lerpSpeed: 3
 --- !u!1 &1596745167
 GameObject:
   m_ObjectHideFlags: 0
