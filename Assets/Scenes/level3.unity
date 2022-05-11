@@ -660,6 +660,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65a1b6685d396954887f0735f5aa8ca1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fieldOfView: {fileID: 0}
   speed: 4
   patrolPoints:
   - {fileID: 1331338665}
@@ -791,6 +792,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65a1b6685d396954887f0735f5aa8ca1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fieldOfView: {fileID: 0}
   speed: 4
   patrolPoints:
   - {fileID: 761677553}
@@ -1030,7 +1032,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &213155997
@@ -2532,6 +2534,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65a1b6685d396954887f0735f5aa8ca1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fieldOfView: {fileID: 0}
   speed: 4
   patrolPoints:
   - {fileID: 1688204396}
@@ -2782,6 +2785,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65a1b6685d396954887f0735f5aa8ca1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fieldOfView: {fileID: 0}
   speed: 4
   patrolPoints:
   - {fileID: 269927051}
@@ -12236,6 +12240,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65a1b6685d396954887f0735f5aa8ca1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fieldOfView: {fileID: 0}
   speed: 4
   patrolPoints:
   - {fileID: 1934524120}
@@ -18053,6 +18058,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65a1b6685d396954887f0735f5aa8ca1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fieldOfView: {fileID: 0}
   speed: 4
   patrolPoints:
   - {fileID: 346636655}
@@ -18501,7 +18507,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1968645464
@@ -38086,7 +38092,7 @@ PrefabInstance:
     - target: {fileID: 8743070376672525870, guid: 026aeee4dae10e74aaf5c5a554d48549, type: 3}
       propertyPath: destination
       value: 
-      objectReference: {fileID: 660241283}
+      objectReference: {fileID: 468912503}
     - target: {fileID: 8743070376672526033, guid: 026aeee4dae10e74aaf5c5a554d48549, type: 3}
       propertyPath: m_Name
       value: TP2

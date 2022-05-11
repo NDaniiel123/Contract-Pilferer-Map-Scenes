@@ -1502,7 +1502,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &284116388
@@ -1985,7 +1985,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &455619436
@@ -7825,6 +7825,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65a1b6685d396954887f0735f5aa8ca1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fieldOfView: {fileID: 0}
   speed: 4
   patrolPoints:
   - {fileID: 1024807965}
@@ -17449,6 +17450,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65a1b6685d396954887f0735f5aa8ca1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fieldOfView: {fileID: 0}
   speed: 4
   patrolPoints:
   - {fileID: 1522368693}
@@ -17690,6 +17692,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65a1b6685d396954887f0735f5aa8ca1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fieldOfView: {fileID: 0}
   speed: 4
   patrolPoints:
   - {fileID: 1390858669}

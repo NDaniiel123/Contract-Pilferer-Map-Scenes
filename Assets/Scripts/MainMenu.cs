@@ -10,13 +10,13 @@ public class MainMenu : MonoBehaviour
 
     public void StartGame()
     {
-        SceneManager.LoadScene("stanLevel");
+        SceneManager.LoadScene("level1");
         Time.timeScale = 1f;
     }
 
     public void Tutorial()
     {
-        SceneManager.LoadScene("testLevel");
+        SceneManager.LoadScene("level0");
         Time.timeScale = 1f;
     }
 }
