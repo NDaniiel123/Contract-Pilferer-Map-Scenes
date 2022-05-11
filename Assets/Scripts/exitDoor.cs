@@ -48,10 +48,6 @@ public class exitDoor : MonoBehaviour
             {
                 SceneManager.LoadScene("level3");
             }
-            else if (SceneManager.GetActiveScene().name == "level3")
-            {
-                SceneManager.LoadScene("level4");
-            }
         }
     }
 

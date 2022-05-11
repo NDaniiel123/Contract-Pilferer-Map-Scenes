@@ -660,6 +660,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65a1b6685d396954887f0735f5aa8ca1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fieldOfView: {fileID: 0}
   speed: 4
   patrolPoints:
   - {fileID: 1331338665}
@@ -791,6 +792,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65a1b6685d396954887f0735f5aa8ca1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fieldOfView: {fileID: 0}
   speed: 4
   patrolPoints:
   - {fileID: 761677553}
@@ -2532,6 +2534,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65a1b6685d396954887f0735f5aa8ca1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fieldOfView: {fileID: 0}
   speed: 4
   patrolPoints:
   - {fileID: 1688204396}
@@ -2782,6 +2785,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65a1b6685d396954887f0735f5aa8ca1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fieldOfView: {fileID: 0}
   speed: 4
   patrolPoints:
   - {fileID: 269927051}
@@ -12236,6 +12240,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65a1b6685d396954887f0735f5aa8ca1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fieldOfView: {fileID: 0}
   speed: 4
   patrolPoints:
   - {fileID: 1934524120}
@@ -18053,6 +18058,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65a1b6685d396954887f0735f5aa8ca1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fieldOfView: {fileID: 0}
   speed: 4
   patrolPoints:
   - {fileID: 346636655}
