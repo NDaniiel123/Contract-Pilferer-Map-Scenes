@@ -74,7 +74,7 @@ public class playerMovement : MonoBehaviour
 
     private void lockPick()
     {
-        if (SceneManager.GetActiveScene().name != "level1")
+        if (SceneManager.GetActiveScene().name != "level1" && SceneManager.GetActiveScene().name != "level0")
         {
             hasLP = 1;
         }
