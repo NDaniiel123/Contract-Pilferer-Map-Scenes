@@ -22,6 +22,8 @@ public class PatrolEnemy : MonoBehaviour
         {
             once = true;
             StartCoroutine(Wait());
+            transform.Rotate(0f, 0f, 180f, Space.Self);
+
         }
     }
 

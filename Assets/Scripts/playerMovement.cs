@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class playerMovement : MonoBehaviour
 {
@@ -17,6 +18,7 @@ public class playerMovement : MonoBehaviour
     private void Start()
     {
         animator = GetComponent<Animator>();
+        lockPick();
     }
 
     // Update is called once per frame
@@ -70,13 +72,11 @@ public class playerMovement : MonoBehaviour
         }
     }
 
-    private void OnDisable()
+    private void lockPick()
     {
-        PlayerPrefs.SetInt("hasLP", hasLP);
-    }
-
-    private void OnEnable()
-    {
-        hasLP = PlayerPrefs.GetInt("hasLP");
+        if (SceneManager.GetActiveScene().name != "level1" && SceneManager.GetActiveScene().name != "level0")
+        {
+            hasLP = 1;
+        }
     }
 }

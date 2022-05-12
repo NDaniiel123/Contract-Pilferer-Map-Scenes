@@ -52,6 +52,7 @@ public class exitDoor : MonoBehaviour
             {
                 SceneManager.LoadScene("level4");
             }
+            print("haha");
         }
     }
 
