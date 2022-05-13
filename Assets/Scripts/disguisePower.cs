@@ -12,7 +12,8 @@ public class disguisePower : MonoBehaviour
     public RuntimeAnimatorController disguiseAnim, normalAnim;
     private bool transformed = false;
     private BoxCollider2D b;
-
+    public GameObject[] guardNo;
+     
     private void Start()
     {
         // Starts the timer automatically
@@ -24,6 +25,10 @@ public class disguisePower : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.G) && !timerIsCoolDown)
         {
+            foreach (GameObject guards in guardNo)
+            {
+                guards.SetActive(false);
+            }
             timerText.gameObject.SetActive(true);
             timerIsRunning = true;
             timeRemaining = 10;
@@ -57,7 +62,11 @@ public class disguisePower : MonoBehaviour
         }       
 
         if (transformed && !timerIsRunning)
-        {                      
+        {
+            foreach (GameObject guards in guardNo)
+            {
+                guards.SetActive(true);
+            }
             animator.runtimeAnimatorController = normalAnim as RuntimeAnimatorController;
             transformed = false;
             transform.position -= new Vector3(0, 0.79f, 0);
