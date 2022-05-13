@@ -42,7 +42,7 @@ public class PauseMenu : MonoBehaviour
 
     public void Restart()
     {
-        SceneManager.LoadScene("testLevel");
+        SceneManager.LoadScene("level1");
         Time.timeScale = 1f;
     }
 }
