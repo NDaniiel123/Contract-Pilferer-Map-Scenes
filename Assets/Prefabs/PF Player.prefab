@@ -99,6 +99,7 @@ GameObject:
   - component: {fileID: 4616719885696106401}
   - component: {fileID: 5768320885676757157}
   - component: {fileID: -7577496780856363302}
+  - component: {fileID: -248605965222566263}
   m_Layer: 20
   m_Name: PF Player
   m_TagString: Player
@@ -270,6 +271,27 @@ MonoBehaviour:
   rb: {fileID: 0}
   keyFollowPoint: {fileID: 0}
   followingKey: {fileID: 0}
+  hasLP: 0
+--- !u!114 &-248605965222566263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5628018141983903104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a99da7e15d4b0e4bb7433feac7eb5b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeRemaining: 0
+  cooldownTime: 0
+  timerIsRunning: 0
+  timerIsCoolDown: 0
+  cooldownText: {fileID: 0}
+  timerText: {fileID: 0}
+  disguiseAnim: {fileID: 9100000, guid: 7eb4f715f2040584b85032e124f5c892, type: 2}
+  normalAnim: {fileID: 9100000, guid: eb1ae3e395b532e4d8dbc08a412e4a7d, type: 2}
 --- !u!1 &7039920457427040188
 GameObject:
   m_ObjectHideFlags: 0

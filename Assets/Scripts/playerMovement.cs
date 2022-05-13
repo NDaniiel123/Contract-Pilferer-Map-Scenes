@@ -10,15 +10,18 @@ public class playerMovement : MonoBehaviour
     public Rigidbody2D rb;
     public Transform keyFollowPoint;
     public Key followingKey;
-    public int hasLP = 0;
+    public int hasLP = 0, hasTP = 0;
+    
 
     Vector2 movement;
     private Animator animator;
+    
 
     private void Start()
     {
         animator = GetComponent<Animator>();
-        lockPick();
+        itemsInvent();
+        
     }
 
     // Update is called once per frame
@@ -52,6 +55,7 @@ public class playerMovement : MonoBehaviour
             animator.SetBool("IsMoving", false);
         }
 
+        
     }
 
     private void FixedUpdate()
@@ -70,13 +74,22 @@ public class playerMovement : MonoBehaviour
         {
             hasLP = 1;
         }
+        if (collision.gameObject.tag == "TeleportPower" && hasTP == 0)
+        {
+            hasTP = 1;
+        }
     }
 
-    private void lockPick()
+    private void itemsInvent()
     {
         if (SceneManager.GetActiveScene().name != "level1" && SceneManager.GetActiveScene().name != "level0")
         {
             hasLP = 1;
         }
+        if (SceneManager.GetActiveScene().name == "level4")
+        {
+            hasTP = 1;
+        }
+        
     }
 }

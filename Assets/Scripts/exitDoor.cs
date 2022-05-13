@@ -34,7 +34,7 @@ public class exitDoor : MonoBehaviour
                 anotherDoor.SetActive(false);
             }
         }
-        if (doorOpen && Vector3.Distance(thePlayer.transform.position, transform.position) < 0.5f && Input.GetAxis("Vertical") > 0.1f)
+        if (doorOpen && Vector3.Distance(thePlayer.transform.position, transform.position) < 0.75f && Input.GetAxis("Vertical") > 0.1f)
         {
             if (SceneManager.GetActiveScene().name == "level0")
             {
@@ -52,7 +52,6 @@ public class exitDoor : MonoBehaviour
             {
                 SceneManager.LoadScene("level4");
             }
-            print("haha");
         }
     }
 
