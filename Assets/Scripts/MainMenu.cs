@@ -8,7 +8,7 @@ public class MainMenu : MonoBehaviour
     public static bool GameIsPaused = false;
     public GameObject pauseMenuUI;
 
-    public void StartGame()
+    public void Level1()
     {
         SceneManager.LoadScene("level1");
         Time.timeScale = 1f;
@@ -31,32 +31,32 @@ public class MainMenu : MonoBehaviour
 
     public void Tutorial1()
     {
-        SceneManager.LoadScene("tut1 - Goal");
+        SceneManager.LoadScene("tut1");
         Time.timeScale = 1f;
     }
     public void Tutorial2()
     {
-        SceneManager.LoadScene("tut2 - Obstacles");
+        SceneManager.LoadScene("tut2");
         Time.timeScale = 1f;
     }
     public void Tutorial3()
     {
-        SceneManager.LoadScene("tut3 - Lock");
+        SceneManager.LoadScene("tut3");
         Time.timeScale = 1f;
     }
     public void Tutorial4()
     {
-        SceneManager.LoadScene("tut4 - Hack");
+        SceneManager.LoadScene("tut4");
         Time.timeScale = 1f;
     }
     public void Tutorial5()
     {
-        SceneManager.LoadScene("tut5 - TP");
+        SceneManager.LoadScene("tut5");
         Time.timeScale = 1f;
     }
     public void Tutorial6()
     {
-        SceneManager.LoadScene("tut6 - Disguise");
+        SceneManager.LoadScene("tut6");
         Time.timeScale = 1f;
     }
     
@@ -86,6 +86,11 @@ public class MainMenu : MonoBehaviour
     public void LevelSelect()
     {
         SceneManager.LoadScene("Level Select");
+        Time.timeScale = 1f;
+    }
+    public void TutorialSelect()
+    {
+        SceneManager.LoadScene("Tutorial Select");
         Time.timeScale = 1f;
     }
 }

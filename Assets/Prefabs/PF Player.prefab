@@ -100,6 +100,7 @@ GameObject:
   - component: {fileID: 77043724546648636}
   - component: {fileID: 5768320885676757157}
   - component: {fileID: -7577496780856363302}
+  - component: {fileID: 1900011229178479483}
   m_Layer: 20
   m_Name: PF Player
   m_TagString: Player
@@ -294,6 +295,24 @@ MonoBehaviour:
   followingKey: {fileID: 0}
   hasLP: 0
   hasTP: 0
+  hasHack: 0
+  hasDis: 0
+  itemInvent: []
+--- !u!114 &1900011229178479483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5628018141983903104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11c594b075682e841b53254afe9d2277, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeRemaining: 5
+  timerIsRunning: 0
+  timeText: {fileID: 0}
 --- !u!1 &7039920457427040188
 GameObject:
   m_ObjectHideFlags: 0

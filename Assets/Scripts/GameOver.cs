@@ -10,7 +10,13 @@ public class GameOver : MonoBehaviour
 
     public void Retry()
     {
-        SceneManager.LoadScene("level1");
+        SceneManager.LoadScene("Level Select");
+        Time.timeScale = 1f;
+    }
+
+    public void LevelSelect()
+    {
+        SceneManager.LoadScene("Level Select");
         Time.timeScale = 1f;
     }
 

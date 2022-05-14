@@ -36,10 +36,31 @@ public class exitDoor : MonoBehaviour
         }
         if (doorOpen && Vector3.Distance(thePlayer.transform.position, transform.position) < 0.75f && Input.GetAxis("Vertical") > 0.1f)
         {
-            if (SceneManager.GetActiveScene().name == "level0")
+            if (SceneManager.GetActiveScene().name == "tut1")
             {
-                SceneManager.LoadScene("level1");
+                SceneManager.LoadScene("tut2");
             }
+            else if (SceneManager.GetActiveScene().name == "tut2")
+            {
+                SceneManager.LoadScene("tut3");
+            }
+            else if (SceneManager.GetActiveScene().name == "tut3")
+            {
+                SceneManager.LoadScene("tut4");
+            }
+            else if (SceneManager.GetActiveScene().name == "tut4")
+            {
+                SceneManager.LoadScene("tut5");
+            }
+            else if (SceneManager.GetActiveScene().name == "tut5")
+            {
+                SceneManager.LoadScene("tut6");
+            }
+            else if (SceneManager.GetActiveScene().name == "tut6")
+            {
+                SceneManager.LoadScene("MainMenu");
+            }
+
             else if (SceneManager.GetActiveScene().name == "level1")
             {
                 SceneManager.LoadScene("level2");
