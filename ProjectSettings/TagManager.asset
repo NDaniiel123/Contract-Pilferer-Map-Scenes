@@ -3,7 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - NextMap
+  - LockPick
+  - Teleporter
+  - TeleportPower
+  - disguisePower
+  - hackPower
   layers:
   - Default
   - TransparentFX

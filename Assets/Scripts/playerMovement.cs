@@ -10,7 +10,8 @@ public class playerMovement : MonoBehaviour
     public Rigidbody2D rb;
     public Transform keyFollowPoint;
     public Key followingKey;
-    public int hasLP = 0, hasTP = 0;
+    public int hasLP = 0, hasTP = 0, hasHack = 0, hasDis = 0;
+    public GameObject[] itemInvent;
     
 
     Vector2 movement;
@@ -65,18 +66,26 @@ public class playerMovement : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Walls")
-        {
-            Debug.Log("Walls");
-        }
-
+        
         if (collision.gameObject.tag == "LockPick" && hasLP == 0)
         {
+            itemInvent[0].SetActive(true);
             hasLP = 1;
         }
         if (collision.gameObject.tag == "TeleportPower" && hasTP == 0)
         {
+            itemInvent[2].SetActive(true);
             hasTP = 1;
+        }
+        if (collision.gameObject.tag == "hackPower" && hasHack == 0)
+        {
+            itemInvent[1].SetActive(true);
+            hasHack = 1;
+        }
+        if (collision.gameObject.tag == "disguisePower" && hasDis == 0)
+        {
+            itemInvent[3].SetActive(true);
+            hasDis = 1;
         }
     }
 
@@ -90,6 +99,10 @@ public class playerMovement : MonoBehaviour
         {
             hasTP = 1;
         }
-        
+        if (SceneManager.GetActiveScene().name == "level3" || SceneManager.GetActiveScene().name == "level4")
+        {
+            hasHack = 1;
+        }     
+
     }
 }

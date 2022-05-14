@@ -1,36 +1,40 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
-public class camHack : MonoBehaviour
+public class secRoom : MonoBehaviour
 {
     private playerMovement thePlayer;
-    private hackCoolDown hackTimer;
 
-    public GameObject camCone;
+    public GameObject[] camConnect;
+    public GameObject parentObj;
     public bool waitingToHack;
-
+    public Sprite hackedSprite;
+    private SpriteRenderer mySprite;
 
 
     // Start is called before the first frame update
     void Start()
     {
         thePlayer = FindObjectOfType<playerMovement>();
-        hackTimer = FindObjectOfType<hackCoolDown>();
+        mySprite = parentObj.GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (waitingToHack && !hackTimer.timerIsRunning)
+        if (waitingToHack)
         {
             if (Input.GetKeyDown(KeyCode.F))
             {
                 waitingToHack = false;
+                mySprite.sprite = hackedSprite;
 
-                hackTimer.timerIsRunning = true;
-                camCone.SetActive(false);
+                foreach (GameObject cams in camConnect)
+                {
+                    cams.SetActive(false);
+                }
+                
             }
         }
 

@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5177447573674890137}
   m_Layer: 0
   m_Name: transformMirror
-  m_TagString: Untagged
+  m_TagString: disguisePower
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
