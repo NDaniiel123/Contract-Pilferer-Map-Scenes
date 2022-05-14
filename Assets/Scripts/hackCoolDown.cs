@@ -18,9 +18,10 @@ public class hackCoolDown : MonoBehaviour
 
         if (timerIsRunning)
         {
-            timeText.gameObject.SetActive(true);
+            
             if (timeRemaining > 0)
             {
+                timeText.gameObject.SetActive(true);
                 timeRemaining -= Time.deltaTime;
                 DisplayTime(timeRemaining);
             }

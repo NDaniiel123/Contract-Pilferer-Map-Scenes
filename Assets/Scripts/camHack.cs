@@ -47,7 +47,16 @@ public class camHack : MonoBehaviour
                 waitingToHack = true;
             }
         }
+    }
 
-
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.tag == "Player")
+        {
+            if (thePlayer.hasHack == 1)
+            {
+                waitingToHack = false;
+            }
+        }
     }
 }

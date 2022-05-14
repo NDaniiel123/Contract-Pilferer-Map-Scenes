@@ -55,8 +55,9 @@ public class playerMovement : MonoBehaviour
         {
             animator.SetBool("IsMoving", false);
         }
+        existedItems();
 
-        
+
     }
 
     private void FixedUpdate()
@@ -68,30 +69,46 @@ public class playerMovement : MonoBehaviour
     {
         
         if (collision.gameObject.tag == "LockPick" && hasLP == 0)
-        {
-            itemInvent[0].SetActive(true);
+        {           
             hasLP = 1;
         }
         if (collision.gameObject.tag == "TeleportPower" && hasTP == 0)
         {
-            itemInvent[2].SetActive(true);
             hasTP = 1;
         }
         if (collision.gameObject.tag == "hackPower" && hasHack == 0)
         {
-            itemInvent[1].SetActive(true);
             hasHack = 1;
         }
         if (collision.gameObject.tag == "disguisePower" && hasDis == 0)
         {
-            itemInvent[3].SetActive(true);
             hasDis = 1;
         }
     }
 
+    private void existedItems()
+    {
+        if (hasLP == 1)
+        {
+            itemInvent[0].SetActive(true);
+        }
+        if (hasTP == 1)
+        {
+            itemInvent[2].SetActive(true);
+        }
+        if (hasHack == 1)
+        {
+            itemInvent[1].SetActive(true);
+        }
+        if (hasDis == 1)
+        {
+            itemInvent[3].SetActive(true);
+        }
+
+    }
     private void itemsInvent()
     {
-        if (SceneManager.GetActiveScene().name != "level1" && SceneManager.GetActiveScene().name != "level0")
+        if (SceneManager.GetActiveScene().name == "level2" || SceneManager.GetActiveScene().name == "level3" || SceneManager.GetActiveScene().name == "level4")
         {
             hasLP = 1;
         }
