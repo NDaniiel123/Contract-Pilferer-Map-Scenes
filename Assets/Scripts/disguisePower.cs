@@ -32,6 +32,7 @@ public class disguisePower : MonoBehaviour
                 {
                     guards.SetActive(false);
                 }
+                thePlayer.disSound.Play();
                 timerText.gameObject.SetActive(true);
                 timerIsRunning = true;
                 timeRemaining = 10;
@@ -71,6 +72,7 @@ public class disguisePower : MonoBehaviour
                 {
                     guards.SetActive(true);
                 }
+                thePlayer.disSound.Play();
                 animator.runtimeAnimatorController = normalAnim as RuntimeAnimatorController;
                 transformed = false;
                 transform.position -= new Vector3(0, 0.69f, 0);

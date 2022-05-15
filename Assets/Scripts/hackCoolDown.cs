@@ -32,6 +32,10 @@ public class hackCoolDown : MonoBehaviour
                 timeText.gameObject.SetActive(false);
             }
         }
+        if (!timerIsRunning)
+        {
+            timeRemaining = 5;
+        }
     }
     void DisplayTime(float timeToDisplay)
     {

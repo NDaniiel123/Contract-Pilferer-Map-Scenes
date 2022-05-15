@@ -9,6 +9,7 @@ public class feedCat : MonoBehaviour
 
     public GameObject theCats, thecatBubble;
     public bool catGo, waitingToGo;
+    public AudioSource feedSound;
 
     // Start is called before the first frame update
     void Start()
@@ -28,6 +29,7 @@ public class feedCat : MonoBehaviour
 
                 thePlayer.followingKey.gameObject.SetActive(false);
                 thePlayer.followingKey = null;
+                feedSound.Play();
 
                 thecatBubble.SetActive(false);
                 Invoke(nameof(disableCats), 1f);

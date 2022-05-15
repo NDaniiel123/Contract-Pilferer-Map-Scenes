@@ -12,6 +12,7 @@ public class playerMovement : MonoBehaviour
     public Key followingKey;
     public int hasLP = 0, hasTP = 0, hasHack = 0, hasDis = 0;
     public GameObject[] itemInvent;
+    public AudioSource openDoorSound, collectPowerSound, lpSound, tpSound, disSound;
     
 
     Vector2 movement;

@@ -28,6 +28,8 @@ public class tpPieces : MonoBehaviour
                 thePlayer.followingKey.gameObject.SetActive(false);
                 thePlayer.followingKey = null;
 
+                thePlayer.collectPowerSound.Play();
+
                 theEffect.SetActive(true);
                 Invoke(nameof(disableCats), 1f);
 

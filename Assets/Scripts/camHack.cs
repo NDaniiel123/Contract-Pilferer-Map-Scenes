@@ -28,7 +28,7 @@ public class camHack : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.F))
             {
                 waitingToHack = false;
-
+                
                 hackTimer.timerIsRunning = true;
                 camCone.SetActive(false);
             }

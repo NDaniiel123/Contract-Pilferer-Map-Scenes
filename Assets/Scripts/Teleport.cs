@@ -17,6 +17,7 @@ public class Teleport : MonoBehaviour
         {
             if (teleporter1 != null) 
             {
+                myPlayer.tpSound.Play();
                 transform.position = teleporter1.GetComponent<Teleporters>().GetDestination().position;               
             }
         }

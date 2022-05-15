@@ -29,6 +29,7 @@ public class exitDoor : MonoBehaviour
 
                 thePlayer.followingKey.gameObject.SetActive(false);
                 thePlayer.followingKey = null;
+                thePlayer.openDoorSound.Play();
 
                 collectEffect.SetActive(true);
                 anotherDoor.SetActive(false);
