@@ -42,9 +42,53 @@ public class inVisionCone : MonoBehaviour
                 SceneManager.LoadScene("GameOver4");
             }
         }
+        if (collision.tag == "Player")
+        {
+            if (SceneManager.GetActiveScene().name == "tut1")
+            {
+                SceneManager.LoadScene("GameOverT1");
+            }
+            if (collision.tag == "Player")
+            {
+                if (SceneManager.GetActiveScene().name == "tut2")
+                {
+                    SceneManager.LoadScene("GameOverT2");
+                }
+                if (collision.tag == "Player")
+                {
+                    if (SceneManager.GetActiveScene().name == "tut3")
+                    {
+                        SceneManager.LoadScene("GameOverT3");
+                    }
+                    if (collision.tag == "Player")
+                    {
+                        if (SceneManager.GetActiveScene().name == "tut4")
+                        {
+                            SceneManager.LoadScene("GameOverT4");
+                        }
+                        if (collision.tag == "Player")
+                        {
+                            if (SceneManager.GetActiveScene().name == "tut5")
+                            {
+                                SceneManager.LoadScene("GameOverT5");
+                            }
+                            if (collision.tag == "Player")
+                            {
+                                if (SceneManager.GetActiveScene().name == "tut6")
+                                {
+                                    SceneManager.LoadScene("GameOverT6");
+                                }
 
 
 
+
+
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
     }
-
 }

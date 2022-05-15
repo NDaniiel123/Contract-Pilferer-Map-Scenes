@@ -31,6 +31,30 @@ public class GameOver : MonoBehaviour
     {
         SceneManager.LoadScene("Level4");
     }
+    public void RetryT1()
+    {
+        SceneManager.LoadScene("tut1");
+    }
+    public void RetryT2()
+    {
+        SceneManager.LoadScene("tut2");
+    }
+    public void RetryT3()
+    {
+        SceneManager.LoadScene("tut3");
+    }
+    public void RetryT4()
+    {
+        SceneManager.LoadScene("tut4");
+    }
+    public void RetryT5()
+    {
+        SceneManager.LoadScene("tut5");
+    }
+    public void RetryT6()
+    {
+        SceneManager.LoadScene("tut6");
+    }
 
 
 

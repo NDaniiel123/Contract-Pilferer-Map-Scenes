@@ -56,4 +56,40 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GameOver4.unity
     guid: 19372c6c96ca2f8459fe3fe51bfc1f1b
+  - enabled: 1
+    path: Assets/Scenes/tut1.unity
+    guid: be9a38718a73bb541a59ca2105999acc
+  - enabled: 1
+    path: Assets/Scenes/tut2.unity
+    guid: b51e909f4aba6be4fa8d6a368783404a
+  - enabled: 1
+    path: Assets/Scenes/tut3.unity
+    guid: 72474665a2eabc04d898b9428c249987
+  - enabled: 1
+    path: Assets/Scenes/tut4.unity
+    guid: 70daf1ca82ee1014ebcbdd894c1787b7
+  - enabled: 1
+    path: Assets/Scenes/tut5.unity
+    guid: 2142bb382310c214e9e44e7afaf69c96
+  - enabled: 1
+    path: Assets/Scenes/tut6.unity
+    guid: 53753cbb5945f2a4684b1f5e6e50f3f6
+  - enabled: 1
+    path: Assets/Scenes/GameOverT1.unity
+    guid: 57f039a4d45a44d458ef47f3f1edff81
+  - enabled: 1
+    path: Assets/Scenes/GameOverT2.unity
+    guid: c10664dc17a642149ae44a8b34495b61
+  - enabled: 1
+    path: Assets/Scenes/GameOverT3.unity
+    guid: 70e85fba23f27324fbd6e52d88171ddc
+  - enabled: 1
+    path: Assets/Scenes/GameOverT4.unity
+    guid: 083a8f28a0285234198e884b4c6073f8
+  - enabled: 1
+    path: Assets/Scenes/GameOverT5.unity
+    guid: c5b5c5aed4386f840afe78475f792aeb
+  - enabled: 1
+    path: Assets/Scenes/GameOverT6.unity
+    guid: 526bb4bd7d5d73b479e5abae43c5a7bb
   m_configObjects: {}
