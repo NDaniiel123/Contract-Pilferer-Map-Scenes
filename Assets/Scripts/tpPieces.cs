@@ -1,13 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
-public class feedCat : MonoBehaviour
+public class tpPieces : MonoBehaviour
 {
     private playerMovement thePlayer;
 
-    public GameObject theCats, thecatBubble;
+    public GameObject theEffect, theTP, brokenTP;
     public bool catGo, waitingToGo;
 
     // Start is called before the first frame update
@@ -29,12 +28,12 @@ public class feedCat : MonoBehaviour
                 thePlayer.followingKey.gameObject.SetActive(false);
                 thePlayer.followingKey = null;
 
-                thecatBubble.SetActive(false);
+                theEffect.SetActive(true);
                 Invoke(nameof(disableCats), 1f);
 
             }
         }
-        
+
     }
 
 
@@ -43,17 +42,19 @@ public class feedCat : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
-            if (thePlayer.followingKey != null)
+            if (thePlayer.followingKey != null && thePlayer.followingKey.tag == "brokenPieces")
             {
                 thePlayer.followingKey.followTarget = transform;
                 waitingToGo = true;
             }
         }
-       
+
     }
 
     private void disableCats()
     {
-        theCats.SetActive(false);
+        brokenTP.SetActive(false);
+        theEffect.SetActive(false); 
+        theTP.SetActive(true);
     }
 }
