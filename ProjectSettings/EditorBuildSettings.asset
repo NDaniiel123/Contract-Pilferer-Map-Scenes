@@ -47,4 +47,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/tut6 - Disguise.unity
     guid: d20056bff0a0c4d468f50223aeff0fdf
+  - enabled: 1
+    path: Assets/Scenes/GameOver2.unity
+    guid: 068b9aef217e3bb4aae1d710bbf136c0
+  - enabled: 1
+    path: Assets/Scenes/GameOver3.unity
+    guid: 4c577611ebf323b408d63e72f04ef6fa
+  - enabled: 1
+    path: Assets/Scenes/GameOver4.unity
+    guid: 1f19a533bc3b68a45897ae5e3d32efb8
   m_configObjects: {}
