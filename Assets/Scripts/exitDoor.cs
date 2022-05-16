@@ -29,20 +29,54 @@ public class exitDoor : MonoBehaviour
 
                 thePlayer.followingKey.gameObject.SetActive(false);
                 thePlayer.followingKey = null;
+                thePlayer.openDoorSound.Play();
 
                 collectEffect.SetActive(true);
                 anotherDoor.SetActive(false);
             }
         }
-        if (doorOpen && Vector3.Distance(thePlayer.transform.position, transform.position) < 0.5f && Input.GetAxis("Vertical") > 0.1f)
+        if (doorOpen && Vector3.Distance(thePlayer.transform.position, transform.position) < 0.75f && Input.GetAxis("Vertical") > 0.1f)
         {
-            if (SceneManager.GetActiveScene().name == "testLevel")
+            if (SceneManager.GetActiveScene().name == "tut1")
             {
-                SceneManager.LoadScene("stanLevel");
+                SceneManager.LoadScene("tut2");
             }
-            else if (SceneManager.GetActiveScene().name == "stanLevel")
+            else if (SceneManager.GetActiveScene().name == "tut2")
             {
-                SceneManager.LoadScene("danLevel");
+                SceneManager.LoadScene("tut3");
+            }
+            else if (SceneManager.GetActiveScene().name == "tut3")
+            {
+                SceneManager.LoadScene("tut4");
+            }
+            else if (SceneManager.GetActiveScene().name == "tut4")
+            {
+                SceneManager.LoadScene("tut5");
+            }
+            else if (SceneManager.GetActiveScene().name == "tut5")
+            {
+                SceneManager.LoadScene("tut6");
+            }
+            else if (SceneManager.GetActiveScene().name == "tut6")
+            {
+                SceneManager.LoadScene("MainMenu");
+            }
+
+            else if (SceneManager.GetActiveScene().name == "level1")
+            {
+                SceneManager.LoadScene("level2");
+            }
+            else if (SceneManager.GetActiveScene().name == "level2")
+            {
+                SceneManager.LoadScene("level3");
+            }
+            else if (SceneManager.GetActiveScene().name == "level3")
+            {
+                SceneManager.LoadScene("level4");
+            }
+            else if (SceneManager.GetActiveScene().name == "level4")
+            {
+                SceneManager.LoadScene("Victory");
             }
         }
     }

@@ -97,8 +97,10 @@ GameObject:
   - component: {fileID: 5628018141983903116}
   - component: {fileID: 5628018141983903117}
   - component: {fileID: 4616719885696106401}
+  - component: {fileID: 7102759555353410618}
   - component: {fileID: 5768320885676757157}
   - component: {fileID: 7000761653329866565}
+  - component: {fileID: 6842398622089001802}
   m_Layer: 20
   m_Name: PF Player
   m_TagString: Player
@@ -188,7 +190,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0019779205, y: 0.2133249}
+  m_Offset: {x: 0.0019779205, y: 0.43671167}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0.03125, z: 0, w: 0.9375}
     pivot: {x: 0.5, y: 0}
@@ -199,7 +201,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.5865278, y: 0.36506104}
+  m_Size: {x: 0.5865278, y: 0.8118346}
   m_EdgeRadius: 0
 --- !u!50 &5628018141983903117
 Rigidbody2D:
@@ -242,6 +244,27 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &7102759555353410618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5628018141983903104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a99da7e15d4b0e4bb7433feac7eb5b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeRemaining: 0
+  cooldownTime: 0
+  timerIsRunning: 0
+  timerIsCoolDown: 0
+  cooldownText: {fileID: 0}
+  timerText: {fileID: 0}
+  disguiseAnim: {fileID: 0}
+  normalAnim: {fileID: 0}
+  guardNo: []
 --- !u!114 &5768320885676757157
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -271,6 +294,25 @@ MonoBehaviour:
   keyFollowPoint: {fileID: 3280808056172652125}
   followingKey: {fileID: 0}
   hasLP: 0
+  hasTP: 0
+  hasHack: 0
+  hasDis: 0
+  itemInvent: []
+--- !u!114 &6842398622089001802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5628018141983903104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11c594b075682e841b53254afe9d2277, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeRemaining: 5
+  timerIsRunning: 0
+  timeText: {fileID: 0}
 --- !u!1 &8955225423634087528
 GameObject:
   m_ObjectHideFlags: 0

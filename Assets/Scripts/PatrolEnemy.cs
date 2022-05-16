@@ -10,18 +10,55 @@ public class PatrolEnemy : MonoBehaviour
     int currentPointIndex;
 
     bool once;
+    private Animator animator;
+    public GameObject visionCone;
+
+    private void Start()
+    {
+        animator = GetComponent<Animator>();
+    }
 
     // Update is called once per frame
-   private void Update()
+    private void Update()
     {
-       if(transform.position != patrolPoints[currentPointIndex].position)
+        if (transform.position != patrolPoints[currentPointIndex].position)
         {
             transform.position = Vector2.MoveTowards(transform.position, patrolPoints[currentPointIndex].position, speed * Time.deltaTime);
-        } else
-           if (once == false)
+            if (patrolPoints[currentPointIndex].position.x - 1f > transform.position.x)
+            {
+                animator.SetInteger("guardDirections", 1);
+
+                StartCoroutine(rotateDelay(0, 0.1f));
+
+            }
+            else if (patrolPoints[currentPointIndex].position.x + 1f < transform.position.x)
+            {
+                animator.SetInteger("guardDirections", 0);
+
+                StartCoroutine(rotateDelay(1, 0.1f));
+
+            }
+            else if (patrolPoints[currentPointIndex].position.y - 1f > transform.position.y)
+            {
+                animator.SetInteger("guardDirections", 2);
+
+                StartCoroutine(rotateDelay(2, 0.1f));
+
+            }
+            else if (patrolPoints[currentPointIndex].position.y + 1f < transform.position.y)
+            {
+                animator.SetInteger("guardDirections", 3);
+                StartCoroutine(rotateDelay(3, 0.1f));
+
+            }
+
+        }
+        else
+            if (once == false)
         {
             once = true;
             StartCoroutine(Wait());
+
         }
     }
 
@@ -31,10 +68,37 @@ public class PatrolEnemy : MonoBehaviour
         if (currentPointIndex + 1 < patrolPoints.Length)
         {
             currentPointIndex++;
-        } else
+        }
+        else
         {
             currentPointIndex = 0;
         }
         once = false;
+    }
+
+    IEnumerator rotateDelay(int directType, float delayTime)
+    {
+        yield return new WaitForSeconds(delayTime);
+        if (directType == 0)
+        {
+            visionCone.transform.localPosition = new Vector3(1.8f, 0, 0);
+            visionCone.transform.rotation = Quaternion.Euler(0, 0, 90f);
+        }
+        else if (directType == 1)
+        {
+            visionCone.transform.localPosition = new Vector3(-1.8f, 0, 0);
+            visionCone.transform.rotation = Quaternion.Euler(0, 0, -90f);
+        }
+        else if (directType == 2)
+        {
+            visionCone.transform.localPosition = new Vector3(0, 2.1f, 0);
+            visionCone.transform.rotation = Quaternion.Euler(0, 0, 180f);
+        }
+        else if (directType == 3)
+        {
+            visionCone.transform.localPosition = new Vector3(0, -1.7f, 0);
+            visionCone.transform.rotation = Quaternion.Euler(0, 0, 0);
+        }
+
     }
 }

@@ -26,6 +26,7 @@ public class lockpickDoor : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.F))
             {
                 waitingToOpen = false;
+                thePlayer.lpSound.Play();
                 
                 anotherDoor.SetActive(false);
             }
